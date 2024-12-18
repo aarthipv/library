@@ -178,5 +178,4 @@ def main_menu():
         else:
             print("Invalid choice. Please try again.")
 
-if __name__ == "__main__":
-    main_menu()
+# Removed the call to main_menu() here.
