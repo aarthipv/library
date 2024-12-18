@@ -1,32 +1,27 @@
-# Library Management System (LMS)
+# Library Management System
 
-## Overview
-This is an open-source Library Management System (LMS) project aimed at providing functionalities for managing books and user records in a library. The system allows librarians to add/remove books, manage users, and handle book borrowing and returning. It also includes features for overdue book notifications.
+## Project Overview
+
+This project is an open-source Library Management System (LMS) built in Python. It allows users to manage books and their records, borrow and return books, and handle user registrations. The goal is to collaboratively develop the system using GitHub.
 
 ## Features
-- **Add and Remove Books:** Librarians can add, remove, or update book records.
-- **Search and Borrow Books:** Users can search for books by title, author, or ISBN and borrow them if available.
-- **Manage User Records:** Track registered users and their borrowed books.
-- **Return Books:** Users can return borrowed books, updating the system.
-- **Issue Management:** Overdue books are flagged, and notifications are generated.
 
-## Technologies
-- **Backend:** Python (can be modified to another language as per preference)
-- **Storage:** JSON/CSV/SQLite for storing book and user records
-- **Version Control:** Git and GitHub for collaboration
+- **Add and Remove Books**: Allows the librarian to add, remove, or update book records.
+- **Search and Borrow Books**: Enables users to search for books by title, author, or ISBN, and borrow them if available.
+- **Manage User Records**: Keeps track of registered users and their borrowed books.
+- **Return Books**: Updates the system when books are returned.
+- **Issue Management**: Handles overdue books and generates notifications for users.
 
-## Installation
-1. Clone the repository:
-'''bash
+## Requirements
+
+- Python 3.x
+- Required Python libraries listed in `requirements.txt`
+
+## Setup Instructions
+
+### Clone the Repository
+
+To get started, you need to clone the repository to your local machine.
+
+```bash
 git clone https://github.com/aarthipv/library.git
-
-3. Navigate to the project directory:
-cd library
-
-4. Install dependencies (if any):
-pip install -r requirements.txt
-
-
-## Usage
-1. Start the system by running:
-python main.py
