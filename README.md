@@ -25,3 +25,11 @@ To get started, you need to clone the repository to your local machine.
 
 ```bash
 git clone https://github.com/aarthipv/library.git
+
+Navigate to the library directory
+```bash
+cd library
+
+Run main.py
+```python
+python3 main.py
