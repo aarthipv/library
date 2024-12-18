@@ -17,7 +17,7 @@ This is an open-source Library Management System (LMS) project aimed at providin
 
 ## Installation
 1. Clone the repository:
-git clone https://github.com/aarthipv/library.git
+'''git clone https://github.com/aarthipv/library.git
 
 2. Navigate to the project directory:
 cd library
