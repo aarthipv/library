@@ -17,12 +17,13 @@ This is an open-source Library Management System (LMS) project aimed at providin
 
 ## Installation
 1. Clone the repository:
-'''git clone https://github.com/aarthipv/library.git
+'''bash
+git clone https://github.com/aarthipv/library.git
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
 cd library
 
-3. Install dependencies (if any):
+4. Install dependencies (if any):
 pip install -r requirements.txt
 
 
