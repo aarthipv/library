@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+
+        <!-- Main Menu -->
+        <div class="menu">
+            <h2>Choose an option</h2>
+            <button onclick="showForm('addBookForm')">Add Book</button>
+            <button onclick="showForm('removeBookForm')">Remove Book</button>
+            <button onclick="showForm('searchBooksForm')">Search Books</button>
+            <button onclick="showForm('borrowBookForm')">Borrow Book</button>
+            <button onclick="showForm('returnBookForm')">Return Book</button>
+            <button onclick="showForm('viewUsersForm')">View Users</button>
+        </div>
+
+        <!-- Add Book Form -->
+        <div id="addBookForm" class="form-container" style="display:none;">
+            <h2>Add Book</h2>
+            <form action="#" method="POST">
+                <input type="text" id="bookTitle" placeholder="Enter Book Title" required><br>
+                <input type="text" id="bookAuthor" placeholder="Enter Author" required><br>
+                <input type="text" id="bookIsbn" placeholder="Enter ISBN" required><br>
+                <button type="submit">Add Book</button>
+            </form>
+            <button class="back-btn" onclick="backToMenu()">Back</button>
+        </div>
+
+        <!-- Remove Book Form -->
+        <div id="removeBookForm" class="form-container" style="display:none;">
+            <h2>Remove Book</h2>
+            <form action="#" method="POST">
+                <input type="text" id="removeBookIsbn" placeholder="Enter ISBN to Remove" required><br>
+                <button type="submit">Remove Book</button>
+            </form>
+            <button class="back-btn" onclick="backToMenu()">Back</button>
+        </div>
+
+        <!-- Search Books Form -->
+        <div id="searchBooksForm" class="form-container" style="display:none;">
+            <h2>Search Books</h2>
+            <form action="#" method="POST">
+                <input type="text" id="searchQuery" placeholder="Search by Title, Author, or ISBN" required><br>
+                <button type="submit">Search</button>
+            </form>
+            <button class="back-btn" onclick="backToMenu()">Back</button>
+        </div>
+
+        <!-- Borrow Book Form -->
+        <div id="borrowBookForm" class="form-container" style="display:none;">
+            <h2>Borrow Book</h2>
+            <form action="#" method="POST">
+                <input type="text" id="borrowUserId" placeholder="Enter User ID" required><br>
+                <input type="text" id="borrowIsbn" placeholder="Enter ISBN to Borrow" required><br>
+                <button type="submit">Borrow Book</button>
+            </form>
+            <button class="back-btn" onclick="backToMenu()">Back</button>
+        </div>
+
+        <!-- Return Book Form -->
+        <div id="returnBookForm" class="form-container" style="display:none;">
+            <h2>Return Book</h2>
+            <form action="#" method="POST">
+                <input type="text" id="returnUserId" placeholder="Enter User ID" required><br>
+                <input type="text" id="returnIsbn" placeholder="Enter ISBN to Return" required><br>
+                <button type="submit">Return Book</button>
+            </form>
+            <button class="back-btn" onclick="backToMenu()">Back</button>
+        </div>
+
+        <!-- View Users Form -->
+        <div id="viewUsersForm" class="form-container" style="display:none;">
+            <h2>View Users</h2>
+            <div id="userList"></div>
+            <button class="back-btn" onclick="backToMenu()">Back</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
