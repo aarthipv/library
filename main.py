@@ -179,3 +179,4 @@ def main_menu():
             print("Invalid choice. Please try again.")
 
 # Removed the call to main_menu() here.
+main_menu()
